@@ -1,0 +1,19 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="api.tests.APITestCase" />
+          <option value="accounts.models.AbstractUser" />
+          <option value="educative.users.forms.course" />
+          <option value="educative.users.views.course" />
+          <option value="blog_project.urls.drf_yasg" />
+          <option value="users.models.CustomUcer" />
+          <option value="users.models.CustomUser" />
+          <option value="pages.views.HomePageView.as_view" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
