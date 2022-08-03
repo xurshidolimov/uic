@@ -74,7 +74,14 @@ class DetailStudentView(APIView):
 
 class MetsenatView(APIView):
     permission_classes = [IsAdminUser]
-    # add sponsor
-    pass
+    def post(self, request, id):
+        serializer = MetsenatSerializer(data=request.data)
+        if serializer.is_valid():
+            # serializer['student_id'] = id
+            serializer.save()
+            return Response(data=serializer.data, status=status.HTTP_201_CREATED)
+        return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    # sponsor update
+    def patch(self, request, id):
+        pass
+
